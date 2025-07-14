@@ -1,0 +1,111 @@
+.products .title {
+    text-align: center;
+    padding: 10px;
+    font-size: 23px;
+    color: #7f7eff;
+    text-shadow: 1px 1px 10px rgb(180, 179, 179);
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.products .prods {
+    margin: auto;
+    padding: 10px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    width: 70%;
+}
+.prod {
+    width: 250px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px rgb(180, 179, 179);
+    transition: transform 0.33s ease-in-out;
+    transition: background-color 0.5s ease-out;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+/*     background-color: rgba(242, 126, 166, 0.148); */
+}
+.prod:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.086);
+}
+.prod .prodimg{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    top: 0;
+    object-fit: cover;
+}
+.products .thetext {
+    margin-right: 5px;
+}
+.products  .titre {
+    color: black;
+    font-size: 15px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+}
+.products .titre ~ p{
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: -5px;
+    text-align: center;
+}
+.products .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.products button {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    height: 35px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(177, 177, 177);
+    transform: background-color 0.5s;
+}
+.products button:hover {
+    background-color: white;
+}
+.products .cartadd {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.products .favadd {
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.products .buttons img{
+    width: 25px;
+    height: 25px;
+}
+.textbtn {
+    opacity: 0.7;
+    transition: opacity 1s;
+}
+.textbtn:hover {
+    opacity: 1;
+}

@@ -1,0 +1,141 @@
+/* rose #d7a9d2 bleu #7f7eff mauve #a390e4 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vw;
+}
+#header #navi {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; */
+    background-image: linear-gradient(to right, #7f7eff, #a390e4, #d7a9d2) ;
+    box-shadow: 2px 3px 5px rgb(193, 193, 193);
+}
+#header #buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    margin-right: 10px;
+}
+#header #buttons .icons:hover {
+    transform:translateY(5px);
+}
+#header #navi img {
+    margin: 20px;
+    margin-left: 50px;
+    width: 120px;
+    object-fit: contain;
+}
+#header #navi #buttons ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#header #navi #buttons .icons img {
+    width: 20px;
+    margin: 2px;
+    margin-right: 10px;
+}
+#header #choice ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    height: 30px;
+}
+#header #choice ul li {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#header #choice a{
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 2px;
+    /* color: #7f7eff; */
+    color: white;
+    padding: 10px;
+}
+#header #choice a:hover{
+    /* color: #d7a9d2; */
+    border-radius: 30px;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+    color: white;
+}
+#header #choice ul li::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: #21aea6;
+    height: 2px;
+}
+#header #announce {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 32px;
+    margin: 0;
+}
+#header #announce ul{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    padding-bottom: 5px;
+}
+#header #announce .ann {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    opacity: 0; 
+    margin-top: -10px;
+    animation: fadeInOut 12s infinite;
+}
+@keyframes fadeInOut {
+    0% {
+        left: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#logo {
+    grid-area: logo;
+}
+#choice {
+    grid-area: menus;
+}
+#buttons {
+    grid-area: options;
+}
+#navi {
+    display: grid;
+    grid-template: 
+        'logo options'
+        'logo menus';
+}

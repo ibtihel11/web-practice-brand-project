@@ -1,0 +1,89 @@
+.foot {
+    margin-top: -150px;
+}
+.footer {
+    min-height: 600px;
+    background-image: linear-gradient(to right, #7f7eff, #a390e4, #d7a9d2);
+}
+.custom-shape-divider-top-1651879645 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 300px;
+  }
+.custom-shape-divider-top-1651879645 .shape-fill {
+    fill: #f0f0f0;
+}
+.people {
+    display: flex;
+    flex-direction: row;
+}
+.footer {
+    margin-top: 300px;
+    color: white;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mailtel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.sociallogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.ctitle {
+    width: 400px;
+}
+.cinfo {
+    display: flex;
+    flex-direction: row;
+}
+.cinfo ul {
+    list-style-type: none;
+}
+.contactinfo {
+    margin: 0px 30px;
+}
+.part .tpart {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #d7a9d3;
+
+}
+.part .telem ul li {
+    margin: 5px;
+    transition: transform 0.1s ease-in;
+}
+.part .telem ul li:hover {
+    transform: scale(1.08);
+}
+.part .telem a {
+    text-decoration: none;
+    color: white;
+    
+}
+.part .telem a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.ctitle h2 {
+    text-shadow: 1px 1px 2px #d7a9d2;
+    font-size: 35px;
+}
